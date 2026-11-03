@@ -1,0 +1,36 @@
+# Shared defaults. Put personal choices in ~/.config/agent-playbook/agents.yaml
+version: 1
+agents:
+- id: builtin
+  type: builtin
+  enabled: true
+  models: auto
+- id: codex
+  type: cli
+  enabled: true
+  command: codex
+  models: auto
+- id: claude
+  type: cli
+  enabled: true
+  command: claude
+  models: auto
+- id: gemini
+  type: cli
+  enabled: true
+  command: gemini
+  models: auto
+- id: codebuddy
+  type: cli
+  enabled: true
+  command: codebuddy
+  models: auto
+selection:
+  development:
+    primary: null
+    fallback: []
+  testing:
+    primary: null
+    fallback: []
+progress:
+  interval_minutes: 10
