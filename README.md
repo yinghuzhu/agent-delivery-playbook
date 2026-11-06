@@ -35,6 +35,8 @@ sh "${XDG_DATA_HOME:-$HOME/.local/share}/agent-delivery-playbook/scripts/install
 - `root-cause-investigation`：基于证据排障。
 - `release-delivery`：制品、发布、验证及回退。
 
+研究技能草案：[evidence-research](skills/evidence-research/SKILL.md)，包含探索型与目标型两种模式；[审查报告与用例](docs/skill-reviews/2026-11-06-evidence-research/review-report.md)。草案尚未加入安装清单，不属于上述五个默认安装的技能。
+
 所有角色遵守项目授权；安装不会授权提交、推送、部署或外部通知。运行时模型可用性仍需实际任务验证。
 
 ## 分支与发布

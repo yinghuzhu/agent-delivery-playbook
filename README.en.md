@@ -35,6 +35,8 @@ The release channel advances to a newer release tag only when its history descen
 - `root-cause-investigation`: evidence-based troubleshooting.
 - `release-delivery`: artifacts, releases, verification, and rollback.
 
+Research skill draft: [evidence-research](skills/evidence-research/SKILL.md), with exploration and targeted research modes; see the [review report and test cases](docs/skill-reviews/2026-11-06-evidence-research/review-report.md). This draft is not in the installer list and is not one of the five skills installed by default.
+
 All roles follow project authorization. Installation does not authorize commits, pushes, deployments, or external notifications. Model availability must still be verified during actual task execution.
 
 ## Branches and releases

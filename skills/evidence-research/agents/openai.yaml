@@ -1,0 +1,4 @@
+interface:
+  display_name: "证据驱动研究"
+  short_description: "以探索和目标两种模式推进研究，追踪证据、反证、关键缺口与下一步决策"
+  default_prompt: "使用 $evidence-research，基于已有材料选择研究模式，明确关键未知并推进最有价值的下一步验证。"
