@@ -20,6 +20,8 @@ By default, installation selects the latest annotated `YYYYMMDDNN` release tag. 
 
 Personal configuration lives in `${XDG_CONFIG_HOME:-~/.config}/agent-playbook/agents.yaml`. The installer creates it only if absent. Set CLI commands, models, primary choices, and ordered fallbacks there. A project-root `agent-playbook.yaml` can override it. Precedence: current explicit user instructions → project configuration → personal configuration → the skill's default `agents.yaml`. Merge rules are documented in `skills/delivery-workflow/references/agent-selection.md`.
 
+Development, testing, and research share `skills/delivery-workflow/agents.yaml`. `selection.development`, `selection.testing`, `selection.search`, and `selection.review` configure separate primary agents, models, and fallbacks for development, testing, investigation, and independent review. Search and review use separate selections and sessions without inheriting each other's choices. evidence-research has no separate configuration file. Missing research roles in older personal configurations remain unselected and do not affect development or testing.
+
 ```sh
 sh "${XDG_DATA_HOME:-$HOME/.local/share}/agent-delivery-playbook/scripts/install.sh" update
 ```

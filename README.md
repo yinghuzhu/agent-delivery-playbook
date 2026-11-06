@@ -20,6 +20,8 @@ curl -fsSL https://raw.githubusercontent.com/yinghuzhu/agent-delivery-playbook/m
 
 个人配置：`${XDG_CONFIG_HOME:-~/.config}/agent-playbook/agents.yaml`。安装时仅在不存在时创建，用户在此填写 CLI、模型、首选及备用。项目根 `agent-playbook.yaml` 可覆盖。优先级：当前用户明确指令 → 项目配置 → 用户配置 → skill 内 `agents.yaml` 默认值；合并规则见 `skills/delivery-workflow/references/agent-selection.md`。
 
+开发、测试与研究共用 `skills/delivery-workflow/agents.yaml`。`selection.development`、`selection.testing`、`selection.search`、`selection.review` 分别配置开发、测试、研究调查和独立复核的首选 agent、模型及备用。search 与 review 分别选择、使用不同会话，不自动相互继承；evidence-research 不维护第二份配置。旧个人配置缺少研究角色时视为未选择，不影响开发和测试。
+
 ```sh
 sh "${XDG_DATA_HOME:-$HOME/.local/share}/agent-delivery-playbook/scripts/install.sh" update
 ```

@@ -32,5 +32,11 @@ selection:
   testing:
     primary: null
     fallback: []
+  search:
+    primary: null
+    fallback: []
+  review:
+    primary: null
+    fallback: []
 progress:
   interval_minutes: 10
